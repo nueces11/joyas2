@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Tienda de Joyas Rancagua</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            background-color: #000;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333; /* Cambié el color de fondo del encabezado */
+            padding: 10px;
+        }
+
+        h1 {
+            color: #fff; /* Cambié el color del texto del encabezado */
+            margin: 0;
+            font-family: 'Georgia', serif;
+            font-size: 24px; /* Aumenté el tamaño del texto del encabezado */
+            font-weight: bold;
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        li {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            margin: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        li:hover {
+            transform: scale(1.05);
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            max-width: 300px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #333; /* Cambié el color del texto a un tono más oscuro */
+            margin-top: 10px;
+        }
+
+        #backButton {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <button id="backButton" onclick="goBack()">Volver</button>
+        <h1>Tu Tienda de Joyas Rancagua</h1>
+    </header>
+
+    <ul>
+        <!-- Joya 1 -->
+        <li>
+            <h2>Joya 1</h2>
+            <img src="cadenadeplata.jpg" alt="Cadena de plata">
+            <p>Precio: 15.000 CLP</p>
+        </li>
+
+        <!-- Joya 2 -->
+        <li>
+            <h2>Joya 2</h2>
+            <img src="imagen_joya_2.jpg" alt="Descripción de la joya 2">
+            <p>Precio: 20.000 CLP</p>
+        </li>
+
+        <!-- Agrega más elementos según sea necesario -->
+    </ul>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+
+</html>
+
+
+
